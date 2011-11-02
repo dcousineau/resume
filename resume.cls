@@ -8,7 +8,7 @@
 
 \LoadClass[letterpaper, oneside, final, 11pt]{scrartcl}
 
-\usepackage[letterpaper,left=0.85in,top=0.75in,right=0.85in,bottom=1.45in]{geometry}
+\usepackage[letterpaper,left=0.85in,top=0.90in,right=0.85in,bottom=1.15in]{geometry}
 
 \RequirePackage{hyperref,scrpage2,titlesec,marvosym,soul,tabularx,lastpage}
 
@@ -52,6 +52,12 @@
 %%
 \newcommand{\footerlink}[1]{{\large\ComputerMouse} \href{#1}{\small{\so{#1}}}}
 
+
+%%
+%% NOTE
+%%
+\newcommand{\footernote}[1]{\begin{center}\small{\emph{#1}}\end{center}}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SECTION COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -73,4 +79,12 @@
     Employer   & #1 \hfill \href{#2}{#2}\\
     Job Title  & #4\\ 
     Duties     & #5\\
+\end{tabularx}}
+
+%%
+%% \project{NAME}{WEBSITE}{ROLE}{DETAILS}
+\newcommand{\project}[4]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+    Project    & #1 \hfill \href{#2}{#2}\\
+    Role       & #3\\
+    Details    & #4\\
 \end{tabularx}}
