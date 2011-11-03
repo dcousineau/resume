@@ -9,6 +9,7 @@
 \LoadClass[letterpaper, oneside, final, 11pt]{scrartcl}
 
 \usepackage[letterpaper,left=0.85in,top=0.90in,right=0.85in,bottom=1.15in]{geometry}
+\usepackage{setspace}
 
 \RequirePackage{hyperref,scrpage2,titlesec,marvosym,soul,tabularx,lastpage}
 
@@ -51,12 +52,6 @@
 %% BLOG/LINK
 %%
 \newcommand{\footerlink}[1]{{\large\ComputerMouse} \href{#1}{\small{\so{#1}}}}
-
-
-%%
-%% NOTE
-%%
-\newcommand{\footernote}[1]{\begin{center}\small{\emph{#1}}\end{center}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% SECTION COMMANDS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
