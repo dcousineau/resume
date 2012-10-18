@@ -25,21 +25,28 @@
 \section{Skills}
 
 \stdtable{
-Languages  & \emph{Professional}: PHP, Python, JavaScript, SQL, BASH\\
+Languages  & \emph{Professional}: PHP, JavaScript, node.js, Python, SQL\\
            & \emph{Hobby/Education}: Clojure, \LaTeX, C, C\#, C++, C, Java\\
-Tools      & Zend Framework 1.x, Doctrine 2.x, jQuery, jQuery Mobile, Git, OpenCV\\
-Services   & Amazon S3, Rackspace CloudFiles\\
+Tools      & Symfony 2.1, Doctrine 2.x, jQuery, Backbone.js, jQuery Mobile, Git, socket.io\\
+Services   & Amazon S3, Rackspace CloudFiles, Stripe, PayPal\\
            & \emph{APIs}: Twitter, Facebook, Foursquare, YouTube\\
-DBs        & MySQL, MS SQL, MongoDB\\
-Systems    & WebOS, OSX, Debian / Ubuntu, Red Hat Enterprise Linux, Windows Server\\
+DBs        & MySQL, MS SQL, MongoDB, neo4j\\
+Systems    & OSX, Debian / Ubuntu, Red Hat Enterprise Linux, Windows Server\\
 }
 
-\section{Experience}
+\section{Relevant Experience}
 
+\employer
+	{Splash Media}
+	{http://splashmedia.com/}
+	{February 2012 --- \emph{Present}}
+	{Software Wizard}
+	{Core developer of \href{http://splashcube.com/}{SplashCube} and \href{http://splashmediau.com/}{Splash Media U}. Utilized Symfony 2.1 in the building of SplashCube and associated daemons. Helped develop queue-based backend architecture using beanstalkd for updating accounts and posting to Twitter, Facebook and Linked In. Refactored front-end to use Backbone.js. Developed streaming services and consumption using node.js and socket.io.}
+\\ \\ \\
 \employer
 	{RAPP}
 	{http://rapp.com}
-	{March 2011 --- \emph{Present}}
+	{March 2011 --- January 2012}
 	{Interactive Software Engineer}
 	{Co-lead architect \& developer for high profile website. Built an interactive movie memory wall \& kiosk using \href{http://flask.pocoo.org/}{Flask} (Python), HTML \& JavaScript for AMC Theatres for use in booths at public events such as their Comicon San Deigo after-party and the \href{http://www.accesshollywood.com/backstage-at-the-emmys/emmys-2011-backstage-at-the-hp-touchsmart-gift-lounge-day-1_gallerytab_3129/20}{2011 Emmy Awards}.}
 \\ \\ \\
@@ -48,36 +55,36 @@ Systems    & WebOS, OSX, Debian / Ubuntu, Red Hat Enterprise Linux, Windows Serv
 	{http://moverati.com}
 	{September 2010 --- March 2011}
 	{Developer}
-	{Develop and maintain web presence using Zend Framework, Symfony DI, and Doctrine 2.0. Helped migrate storage to Amazon S3. Maintained front-end interactivity with jQuery and integrated authentication with Facebook connect. Ensured site scaled with spikes in traffic during events such as the NFL Experience 2011. Developed mobile experience using jQuery Mobile, enabling the registering and viewing of videos and photos from iPhone, Android, and WebOS devices.}
+	{Develop and maintain web presence using Zend Framework, Symfony DI, and Doctrine 2.0. Helped migrate storage to Amazon S3. Maintained front-end interactivity with jQuery and Facebook connect. Ensured site scaled with spikes in traffic during events such as the NFL Superbowl Experience 2011. Developed mobile experience using jQuery Mobile.}
 \\ \\ \\
 \employer
 	{Orthochronos Forecasting, LLC.}
 	{http://orthochronos.com/}
 	{July 2009 --- July 2011}
 	{Consultant}
-	{Built and maintained web application infrastructure as a part of a team, retained for maintenance and upgrades. Work included recurring billing profiles with PayPal and a Python data importation daemon. Migrated datastore and AMF service to MongoDB.}
+	{Built and maintained original application, retained for maintenance and upgrades. Implemented PayPal recurring billing and a Python data import daemon. Migrated data to MongoDB.}
 \\ \\ \\
 \employer
 	{Texas A\&M Division of Student Affairs Department of IT}
 	{http://doit.tamu.edu/}
 	{April 2009 --- September 2010}
 	{Senior Software Applications Developer}
-	{Maintain and upgrade legacy applications. Develop a growing Drupal 6 multi-site install. Develop custom Zend Framework 1.10 and Doctrine 1.2 applications. Migrated work environment to Mercurial. Developed Python daemon to import student/schedule information to be provided through a JSON-RPC interface.}
+	{Developed Zend Framework and Doctrine 1 applications. Developed Python daemon to import student information and provided via JSON API.}
 \\ \\ \\
 \employer
 	{Systek Computing Technologies/Net Perspective, LLC.}
 	{http://net-perspective.com/}
 	{March 2007 --- January 2009}
 	{Developer \& Project Manager}
-	{Updated internal MVC framework, eventually replaced with the Zend Framework and Doctrine. Introduced Subversion, Phing, and DBDeploy. Worked in a team consisting of a designer, flash developer, and another PHP developer.}
+	{Primary developer, worked with Zend Framework 1.x developing sites for client.}
 
-\section{Open Source Projects}
+\section{Selected Open Source Contributions}
 
 \project
-	{PreJoind.In for HP WebOS}
-	{http://github.com/joindin/joindin-webos}
-	{Creator / Founder}
-	{A WebOS client for \href{http://joind.in/}{Joind.In}, an online event feedback website targeted at conferences. Built using JavaScript and the native WebOS SDK and released as open source under the GPL.}
+	{Phorever}
+	{https://github.com/dcousineau/phorever}
+	{Creator}
+	{PHP daemon and long-running process management, built to address a need internally at Splash Media and released as open source.}
 \\ \\ \\
 \project
 	{Spaz / SpazHD for HP WebOS}
@@ -85,17 +92,25 @@ Systems    & WebOS, OSX, Debian / Ubuntu, Red Hat Enterprise Linux, Windows Serv
 	{Contributor}
 	{A fully open-source twitter client for HP WebOS devices including the TouchPad. Contributed to maintenence when Twitter introduced PIN authentication, worked on low-level Enyo performance, and served as a rep by attending WebOS developer days.}
 
-\section{Talks and Presentations}
+\section{Selected Presentations}
 
 \begin{spacing}{1.25}
+\href{https://speakerdeck.com/u/dcousineau/p/html5-and-javascript-part-deux-javascript}{``HTML5 and JavaScript"} tutorial presented at \href{http://tek12.phparch.com/talks/#HTML5-and-Javascript-for-the-PHP-Developer}{tek12} with \href{http://jakefolio.com/}{Jake Smith} \emph{(covered JavaScript portion)}
+\\
 \href{http://www.slideshare.net/eljefe/jquery-mobile-for-fun-and-profit}{``jQuery Mobile: For Fun and Profit"} presented at \href{http://whereconf.com/where2011/public/schedule/speaker/110352}{O'Reilly Where 2.0 2011} \& \href{http://zendcon.com/2011/speaker/#4054}{ZendCon 2011}
 \\
 \href{http://www.slideshare.net/eljefe/disregard-inputs-acquire-zendform}{``Disregard Inputs, Acquire Zend\_Form"} presented at \href{http://lonestarphp.com/}{LoneStar PHP 2011}
 \\
-\href{http://www.slideshare.net/eljefe/automated-deployment-with-phing}{``NOSQL 101, Or: How I Learned To Stop Worrying And Love The Mongo"} presented at \href{http://http://dallasphp.org/}{DallasPHP}
-\\
 \href{http://www.slideshare.net/eljefe/automated-deployment-with-phing}{``Automated Deployment Techniques with Phing"} presented at \href{http://zendcon.com/2009/speakers#4054}{ZendCon 2009}
 \end{spacing}
+
+\section{Community \& Awards}
+
+Co-Organizer of \href{http://www.meetup.com/dallasphp/}{DallasPHP}
+\\
+Co-Organizer of the \href{http://lonestarphp.com/}{Lone Star PHP 2012 Conference}
+\\
+Eagle Scout Rank, Boy Scouts of America, 2004
 
 \section{Education}
 
@@ -103,9 +118,5 @@ Systems    & WebOS, OSX, Debian / Ubuntu, Red Hat Enterprise Linux, Windows Serv
 School              & Texas A\&M University \hfill Class of 2009\\ 
 Degree              & B.S., Computer Science; Minor, Business Administration\\
 }
-
-\section{Awards}
-
-Eagle Scout Rank, Boy Scouts of America, 2004
 
 \end{document}
