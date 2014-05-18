@@ -8,4 +8,4 @@ On a Mac if you just install MacTex and follow some basic tutorials about workin
 
 # License
 
-My licensing terms are thus: You are allow to take my code whole-sale and produce your own resume. For obvious reasons you may not reuse any of the content (such as skills, etc) but do with the formatting as you will. If you use my source to build your resume, I would love a link to your resume to see what you did differently (usually better).
+My licensing terms are thus: You are allowed to take my code whole-sale and produce your own resume. For obvious reasons you may not reuse any of the content (such as skills, etc) but do with the formatting as you will. If you use my source to build your resume, I would love a link to your resume to see what you did differently (usually better).
