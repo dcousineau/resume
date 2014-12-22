@@ -4,7 +4,14 @@ You can find a *mostly* recently compiled version of my resume in the [releases]
 
 ## Building the Source
 
-On a Mac if you just install MacTex and follow some basic tutorials about working pdflatex you'll be golden. In Linux you just install a full TexLive (just to be safe) and follow the same instructions. For Windows... it's been so long I can be of no help. TexLive for Windows should help you out.
+#### Mac Instructions
+* Install [MacTex](https://tug.org/mactex/). They recommend you download with Safari.
+* Confirm that `pdflatex` is in your path with `which pdflatex`.
+* If not, something along these lines should work `cd /usr/local/bin && sudo ln -s /usr/texbin/pdflatex`.
+* Compile the resume with `pdflatex resume.tex`.
+* Voila!
+
+In Linux you just install a full TexLive (just to be safe) and follow the same instructions. For Windows... it's been so long I can be of no help. TexLive for Windows should help you out.
 
 # License
 
