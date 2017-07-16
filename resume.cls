@@ -74,10 +74,12 @@
     Employer   & #1 \hfill \href{#2}{#2}\\
     Job Title  & #4\\ 
     Duties     & #5\\
-\end{tabularx}}
+\end{tabularx}
+\\ \\ \\}
 
 %%
 %% \project{NAME}{WEBSITE}{ROLE}{DETAILS}
+%%
 \newcommand{\project}[4]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
     Project    & #1 \hfill \href{#2}{#2}\\
     Role       & #3\\

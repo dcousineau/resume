@@ -4,3 +4,5 @@
 *.log
 *.out
 *.pdf
+*.fls
+*.fdb_latexmk
