@@ -5,7 +5,7 @@ You can find a *mostly* recently compiled version of my resume in the [releases]
 ## Building the Source
 
 #### Mac Instructions
-* Install [MacTex](https://tug.org/mactex/). They recommend you download with Safari.
+* Install [MacTex](https://tug.org/mactex/) using `brew cask install mactex`
 * Confirm that `pdflatex` is in your path with `which pdflatex`.
 * If not, something along these lines should work `cd /usr/local/bin && sudo ln -s /usr/texbin/pdflatex`.
 * Compile the resume with `pdflatex resume.tex`.
