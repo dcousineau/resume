@@ -10,6 +10,7 @@
 
 \usepackage[letterpaper,left=0.85in,top=0.90in,right=0.85in,bottom=1.15in]{geometry}
 \usepackage{setspace}
+\usepackage{xifthen}
 
 \RequirePackage{hyperref,scrpage2,titlesec,marvosym,soul,tabularx,lastpage}
 
@@ -72,8 +73,10 @@
 \newcommand{\employer}[5]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
     Period     & #3\\
     Employer   & #1 \hfill \href{#2}{#2}\\
-    Job Title  & #4\\ 
-    Duties     & #5\\
+    Job Title  & #4
+    \ifthenelse{\isempty{#5}}
+        {}
+        {\\Duties     & #5\\}
 \end{tabularx}
 \\ \\ \\}
 
