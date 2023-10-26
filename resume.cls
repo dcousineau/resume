@@ -11,8 +11,11 @@
 \usepackage[letterpaper,left=0.85in,top=0.90in,right=0.85in,bottom=1.15in]{geometry}
 \usepackage{setspace}
 \usepackage{xifthen}
+\usepackage{enumitem}
+\usepackage{stackengine}
 
-\RequirePackage{hyperref,scrpage2,titlesec,marvosym,soul,tabularx,lastpage}
+
+\RequirePackage{hyperref,scrlayer-scrpage,titlesec,marvosym,soul,makecell,tabularx,lastpage}
 
 %%
 %% Page Setup
@@ -70,15 +73,16 @@
 %%
 %% \employer{NAME}{WEBSITE}{DATE}{TITLE}{DESCRIPTION}
 %%
-\newcommand{\employer}[5]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\newcommand{\employer}[5]{\addstackgap[0.5em]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
     Period     & #3\\
-    Employer   & #1 \hfill \href{#2}{#2}\\
-    Job Title  & #4
+    Employer   & #1 \hfill \href{#2}{#2}
+    \ifthenelse{\isempty{#4}}
+        {}
+        {\\Job Title  & #4}
     \ifthenelse{\isempty{#5}}
         {}
-        {\\Duties     & #5\\}
-\end{tabularx}
-\\ \\ \\}
+        {\\Duties     & \makecell[Xt]{\begin{minipage}[t]{\linewidth}#5\end{minipage}}\\}
+\end{tabularx}}}
 
 %%
 %% \project{NAME}{WEBSITE}{ROLE}{DETAILS}
@@ -88,3 +92,11 @@
     Role       & #3\\
     Details    & #4\\
 \end{tabularx}}
+
+%%
+%% LIST STYLES
+%%
+
+\newlist{jobitems}{itemize}{3}
+\setlist[jobitems]{label=\textbullet,nosep,topsep=0em,labelindent=\parindent,leftmargin=*}
+\setlist[jobitems,2]{label=-}

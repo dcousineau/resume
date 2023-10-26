@@ -3,6 +3,8 @@
 *.aux
 *.log
 *.out
+*.out.*
 *.pdf
+*.dvi
 *.fls
 *.fdb_latexmk
