@@ -18,6 +18,9 @@
 
 \setlength{\parskip}{0pt}
 \setlength{\parindent}{0pt}
+\hfuzz=5pt
+
+\hypersetup{hidelinks}
 
 %%
 %% Page Setup

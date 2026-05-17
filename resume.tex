@@ -1,13 +1,15 @@
 \documentclass{resume}
 
+\setlength{\footheight}{49.59999pt}
+
 \rohead{\thepage\ of \pageref{LastPage}}
 
 \cofoot{
   \begin{spacing}{1}
     \so{New York, NY}
-    %%  \so{Address, Line 2, City, ST 00000} \\
+    % \so{Address, Line 2, City, ST 00000} \\
     \small{
-      %%      \footerphone{(555) 555-5555} \
+      % \footerphone{(555) 555-5555} \
       % \footerlink{http://dcousineau.com/} \
       \footeremail{dcousineau@gmail.com}
     } \\
@@ -25,9 +27,24 @@
 \section{Selected Experience}
 
 \employer
+{Ember Hiring}
+{https://www.emberhiring.com}
+{March 2023 --- \emph{Present}}
+{Co-founder \& Head of Engineering}
+{
+  \begin{jobitems}
+  \item Initially advised startup during initial explorations, became full-time co-founding role in March 2024 when the business pivoted to Travel Nurse Staffing.
+  \item Lead greenfield build-out of customer-facing products and designed and oversaw broader internal architectures.
+  \item AWS multi-account, Cloudformation+CDK, Fargate execution of containerized Node.js based services (Next.js and Fastify)
+  \item Built a secure MCP to allow customers to interact with our platform using their own LLM tooling.
+  \item Wear as many ``hats'' as necessary: support Sales efforts, drive day-to-day Customer Success, and manage Product roadmaps through extensive customer interviews and tight iterative cycles.
+  \item Maintain ``scrappy not crappy'' philosophy --- minimizing costs without hampering forward development while leveraging AI tools to boost productivity across engineering and non-engineering functions.
+\end{jobitems}}
+
+\employer
 {GoDaddy}
 {https://www.godaddy.com}
-{August 2020 --- \emph{Present}}
+{August 2020 --- March 2024}
 {Director of Engineering, UXPlatforms \& Open Source }
 {
   \begin{jobitems}
@@ -42,6 +59,7 @@
   \item Join forces with Legal and Consumer Engineering teams to drive WCAG 2.0 AA accessibility compliance adoption.
   \item Join forces with Privacy and Legal teams to deliver data collection notification compliance with 2023 CPRA changes.
 \end{jobitems}}
+
 \employer
 {Rent the Runway}
 {https://www.renttherunway.com}
@@ -53,6 +71,7 @@
   \item Lead consumer frontend engineering efforts and standards, focused on improving process and discipline while upgrading legacy systems to modern practices.
   \item Helped focus career-ladder to be more inclusive of Frontend Engineering, evaluate \& level new Frontend Engineer candidates for fitness.
 \end{jobitems}}
+
 \employer
 {Aalto}
 {https://aalto.com}
@@ -63,12 +82,6 @@
   \item Founded and lead sustainable \& performant Frontend engineering practices from blank canvas through a wildly successful Seed raise.
   \item Helped architect and deploy a GKE based ``microlith'' service architecture
 \end{jobitems}}
-\employer
-{\emph{Various Consulting Opportunities}}
-{https://www.linkedin.com/in/dcousineau}
-{October 2017 --- April 2018}
-{}
-{}
 
 % \employer
 %     {The Muse}
@@ -76,12 +89,14 @@
 %     {February 2018 --- April 2018}
 %     {Consulting Director of Engineering}
 %     {Identified and established engineering organization and process improvements for multiple teams, but with a special focus on performance and growth.}
+
 % \employer
 %     {BounceX \emph{\ldots now Wunderkind}}
 %     {https://www.wunderkind.co}
 %     {October 2017 --- December 2017}
 %     {Director of Engineering, Applications}
 %     {Got hands-on early and led an emergency team to repair and scale a legacy system, from constant crashing to comfortably handling double prior traffic during Black Friday / Cyber Monday (readily hitting at 12,000 HTTP requests per second to database and redis backed services).}
+
 \employer
 {Grovo \emph{\ldots acquired by Cornerstone OnDemand}}
 {}
@@ -94,6 +109,7 @@
   \item Spearheaded adoption of more formal agile project management.
   \item Established bug triage process across entire Engineering organization in collaboration with the Customer Success teams to improve reporting and intake procedures.
 \end{jobitems}}
+
 \employer
 {Croscon \emph{\ldots now PolicyFly}}
 {https://croscon.com}
@@ -106,12 +122,14 @@
   \item Architected and built SPA e-commerce applications for clients acting as their startup's first engineering team.
   \item Architected and built a high volume document management system in Python \& C++ using the Tesseract OCR tool to automate entry of financial reports.
 \end{jobitems}}
+
 % \employer
 %     {Splash Media}
 %     {}
 %     {February 2012 --- May 2013}
 %     {Software Wizard}
 %     {}
+
 % \employer
 %     {RAPP}
 %     {https://rapp.com}
@@ -119,6 +137,7 @@
 %     {Interactive Software Engineer}
 %     {}
 %     % {Built an ADDY award winning interactive movie memory wall using Python \& Javascript for AMC Theatres for use in booths at public events such as their Comicon San Diego after-party and the 2011 Emmy Awards.}
+
 % \employer
 %     {Moverati}
 %     {}
@@ -126,6 +145,7 @@
 %     {Developer}
 %     {}
 %     % {Developed new product features \& ensured site scaled with spikes in traffic during events such as the NFL Superbowl Experience 2011.}
+
 % \employer
 %     {Texas A\&M Division of Student Affairs Department of IT}
 %     {https://doit.tamu.edu}
@@ -140,16 +160,10 @@
 \employer
 {OpenJS Foundation}
 {https://openjsf.org}
-{October 2021 --- \emph{Present}}
+{October 2021 --- March 2024}
 {Member, Board of Directors}
-{}
-\employer
-{Orange Hiring}
-{}
-{March 2023 --- \emph{Present}}
-{Advisor, Engineering}
-{}
-%
+{Elected by peers to represent Gold sponsors on the OpenJS Foundation Board of Directors on behalf of GoDaddy.}
+
 %% \section{Selected Open Source Contributions}
 %%
 %% \project
@@ -163,34 +177,38 @@
 %%    {http://getspaz.com/}
 %%     {\small{(Former)} \normalsize{Contributor}}
 %%     {A fully open-source twitter client for HP WebOS devices including the TouchPad.}
-%
-% \section{Selected Presentations}
-%
-% \begin{spacing}{1.25}
-% \href{https://speakerdeck.com/dcousineau/time-is-a-social-construct}{``Time is a Social Construct''} --- \href{https://2019.jsconf.us/speakers/daniel-cousineau}{JSConf 2019}\\
-% \href{https://speakerdeck.com/dcousineau/react-at-scale}{``React @ Scale''} --- \href{https://www.longhornphp.com}{LonghornPHP 2019}\\
-% \href{https://speakerdeck.com/dcousineau/frontend-performance-and-you}{``Frontend Performance \& You''} --- \href{https://www.longhornphp.com}{LonghornPHP 2019}\\
-% \href{https://speakerdeck.com/dcousineau/feature-flags-and-you}{``Feature Flags \& You''} --- \href{http://brooklynjs.com}{BrooklynJS 2017}\\
-% \href{https://speakerdeck.com/dcousineau/react-plus-redux-at-scale}{``React+Redux @ Scale"} --- \href{https://qconnewyork.com/ny2017/presentation/reactredux-scale-talk}{QCon New York 2017}\\
-% % \href{https://speakerdeck.com/dcousineau/how-not-writing-php-makes-you-better-at-php}{``How Not Writing PHP Makes You Better At PHP"} --- \href{https://conference.phpbenelux.eu/2015/}{PHPBenelux 2015}\\
-% % \href{https://speakerdeck.com/dcousineau/reframing-the-problem-dcjs-july-2016}{``Reframing the Problem"} --- \href{http://2014.madisonphpconference.com/schedule/view/19/reframing-the-problem-daniel-cousineau}{MadisonPHP 2014} Keynote \& \href{http://truenorthphp.ca/}{True North PHP 2014}\\
-% % \href{https://speakerdeck.com/dcousineau/queues-and-the-giant-beanstalkd}{``Queues and the Giant beanstalkd"} --- \href{http://confoo.ca/}{ConFoo 2013}\\
-% \emph{Full presentation history can be found at \href{https://speakerdeck.com/dcousineau}{https://speakerdeck.com/dcousineau}}
-% \end{spacing}
-%
-\section{Community \& Awards}
 
-Co-Organizer \& Co-Founder of former QueensJS meetup, former DallasPHP meeup co-organizer
-\\
-Co-Organizer of the \href{http://lonestarphp.com/}{Lone Star PHP 2012--2017 Conferences} \& \href{http://empirejs.org/}{EmpireJS 2016--2018 Conferences}
-\\
-Eagle Scout Rank, Boy Scouts of America, 2004
+\section{Selected Presentations}
 
-\section{Education}
+\begin{spacing}{1.35}
+  \href{https://speakerdeck.com/dcousineau/time-is-a-social-construct}{``Time is a Social Construct''} --- \href{https://2019.jsconf.us/speakers/daniel-cousineau}{JSConf 2019}\\
+  % \href{https://speakerdeck.com/dcousineau/react-at-scale}{``React @ Scale''} --- \href{https://www.longhornphp.com}{LonghornPHP 2019}\\
+  % \href{https://speakerdeck.com/dcousineau/frontend-performance-and-you}{``Frontend Performance \& You''} --- \href{https://www.longhornphp.com}{LonghornPHP 2019}\\
+  % \href{https://speakerdeck.com/dcousineau/feature-flags-and-you}{``Feature Flags \& You''} --- \href{http://brooklynjs.com}{BrooklynJS 2017}\\
+  % \href{https://speakerdeck.com/dcousineau/react-plus-redux-at-scale}{``React+Redux @ Scale"} --- \href{https://qconnewyork.com/ny2017/presentation/reactredux-scale-talk}{QCon New York 2017}\\
+  % \href{https://speakerdeck.com/dcousineau/how-not-writing-php-makes-you-better-at-php}{``How Not Writing PHP Makes You Better At PHP"} --- \href{https://conference.phpbenelux.eu/2015/}{PHPBenelux 2015}\\
+  % \href{https://speakerdeck.com/dcousineau/reframing-the-problem-dcjs-july-2016}{``Reframing the Problem"} --- \href{http://2014.madisonphpconference.com/schedule/view/19/reframing-the-problem-daniel-cousineau}{MadisonPHP 2014} Keynote \& \href{http://truenorthphp.ca/}{True North PHP 2014}\\
+  % \href{https://speakerdeck.com/dcousineau/queues-and-the-giant-beanstalkd}{``Queues and the Giant beanstalkd"} --- \href{http://confoo.ca/}{ConFoo 2013}\\
+  \emph{Full presentation history can be found at \href{https://speakerdeck.com/dcousineau}{https://speakerdeck.com/dcousineau}}
+\end{spacing}
+
+\section{Education, Community \& Awards}
 
 \stdtable{
   School              & Texas A\&M University \hfill Class of 2009\\
   Degree              & B.S., Computer Science; Minor, Business Administration\\
 }
+\\
+\begin{spacing}{1.35}
+  Co-Organizer \& Co-Founder of the QueensJS meetup \emph{(2014--2020)}
+  \\
+  Co-Organizer of the DallasPHP meetup \emph{(2011--2013)}
+  \\
+  Co-Organizer of the \href{http://empirejs.org/}{EmpireJS Conference} \emph{(2016--2018)}
+  \\
+  Co-Organizer of the \href{http://lonestarphp.com/}{Lone Star PHP Conferences} \emph{(2012--2017)}
+  \\
+  Eagle Scout Rank, Boy Scouts of America, 2004
+\end{spacing}
 
 \end{document}
