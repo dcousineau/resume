@@ -14,8 +14,10 @@
 \usepackage{enumitem}
 \usepackage{stackengine}
 
-
 \RequirePackage{hyperref,scrlayer-scrpage,titlesec,marvosym,soul,makecell,tabularx,lastpage}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
 
 %%
 %% Page Setup
@@ -31,11 +33,11 @@
 %% NAME
 %%
 \newcommand{\name}[1]{
-	\title{#1's Resum$\acute{e}$}
-	\author{#1}
-	\begin{center}
-    	\textsc{ \Huge{ \so{#1} } }
-    \end{center}
+  \title{#1's Resum$\acute{e}$}
+  \author{#1}
+  \begin{center}
+    \textsc{ \Huge{ \so{#1} } }
+  \end{center}
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -66,28 +68,33 @@
 %%
 %%
 %%
-\newcommand{\stdtable}[1]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-#1
+\newcommand{\stdtable}[1]{
+  \begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+    #1
 \end{tabularx}}
 
 %%
 %% \employer{NAME}{WEBSITE}{DATE}{TITLE}{DESCRIPTION}
 %%
-\newcommand{\employer}[5]{\addstackgap[0.5em]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
-    Period     & #3\\
-    Employer   & #1 \hfill \href{#2}{#2}
-    \ifthenelse{\isempty{#4}}
-        {}
-        {\\Job Title  & #4}
-    \ifthenelse{\isempty{#5}}
-        {}
-        {\\Duties     & \makecell[Xt]{\begin{minipage}[t]{\linewidth}#5\end{minipage}}\\}
+\newcommand{\employer}[5]{\addstackgap[0.5em]{
+    \begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+      Period     & #3\\
+      Employer   & #1 \hfill \href{#2}{#2}
+      \ifthenelse{\isempty{#4}}
+      {}
+      {\\Job Title  & #4}
+      \ifthenelse{\isempty{#5}}
+      {}
+      {\\Duties     & \makecell[Xt]{
+          \begin{minipage}[t]{\linewidth}#5
+      \end{minipage}}\\}
 \end{tabularx}}}
 
 %%
 %% \project{NAME}{WEBSITE}{ROLE}{DETAILS}
 %%
-\newcommand{\project}[4]{\begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
+\newcommand{\project}[4]{
+  \begin{tabularx}{1.00\linewidth}{>{\raggedleft\scshape}p{2cm}X}
     Project    & #1 \hfill \href{#2}{#2}\\
     Role       & #3\\
     Details    & #4\\

@@ -6,7 +6,9 @@ You can find a *mostly* recently compiled version of my resume in the [releases]
 
 #### Mac Instructions
 
-* Install [MacTex](https://tug.org/mactex/) using `brew install --cask mactex-no-gui`
+* Install LaTeX. Two options:
+  * **Minimal (~100MB):** `brew install --cask basictex` then `sudo tlmgr update --self && sudo tlmgr install koma-script geometry setspace xifthen enumitem stackengine hyperref titlesec marvosym soul makecell lastpage`
+  * **Full (~4GB, no extra setup):** `brew install --cask mactex-no-gui`
 * Compile the resume with `pdflatex resume.tex`.
 * Voila!
 

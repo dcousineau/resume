@@ -1,0 +1,42 @@
+name: Build and Release Resume
+
+on:
+  workflow_dispatch:
+    inputs:
+      release_name:
+        description: 'Release name (default: "Month YYYY", e.g. "June 2026")'
+        required: false
+        type: string
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Determine release metadata
+        id: meta
+        run: |
+          if [ -n "${{ inputs.release_name }}" ]; then
+            RELEASE_NAME="${{ inputs.release_name }}"
+          else
+            RELEASE_NAME="$(date +'%B %Y')"
+          fi
+          TAG="release-$(date +'%Y%m%d%H%M%S')"
+          echo "name=${RELEASE_NAME}" >> "$GITHUB_OUTPUT"
+          echo "tag=${TAG}" >> "$GITHUB_OUTPUT"
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.meta.outputs.tag }}
+          name: ${{ steps.meta.outputs.name }}
+          files: resume.pdf
