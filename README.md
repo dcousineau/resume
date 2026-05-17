@@ -9,6 +9,7 @@ You can find a *mostly* recently compiled version of my resume in the [releases]
 * Install LaTeX. Two options:
   * **Minimal (~100MB):** Run or see `./setup.sh`
   * **Full (~4GB, no extra setup):** `brew install --cask mactex-no-gui`
+* Copy `.latexmkrc.dist` to `.latexmkrc`: `cp .latexmkrc.dist .latexmkrc`
 * Compile the resume with `pdflatex resume.tex`.
 * Voila!
 

@@ -8,3 +8,4 @@
 *.dvi
 *.fls
 *.fdb_latexmk
+.latexmkrc
