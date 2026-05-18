@@ -48,6 +48,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%
+%% LOCATION
+%%
+\newcommand{\footerlocation}[1]{{\large\Mundus} \so{#1}}
+
+%%
 %% EMAIL
 %%
 \newcommand{\footeremail}[1]{{\large\Letter} \href{mailto:#1}{\so{#1}}}
@@ -55,7 +60,7 @@
 %%
 %% PHONE
 %%
-\newcommand{\footerphone}[1]{{\large\Telefon} \small{\so{#1}}}
+\newcommand{\footerphone}[1]{{\large\Mobilefone} \small{\so{#1}}}
 
 %%
 %% BLOG/LINK
