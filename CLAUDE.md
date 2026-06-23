@@ -5,10 +5,16 @@ This file provides guidance to LLM agents like Claude Code when working with cod
 ## Build
 
 ```bash
-pdflatex resume.tex
+pdflatex resume.tex   # produces resume.pdf
 ```
 
 Requires LaTeX. Run `./setup.sh` on Mac, otherwise inform the user that they need to ensure a proper TeX distribution is available and to look at `./setup.sh` for reference.
+
+Format `.tex`/`.cls` source with `tex-fmt resume.tex` (installed by `setup.sh`).
+
+After editing, verify with `pdflatex -interaction=nonstopmode -halt-on-error resume.tex` and check the `Output written ... (N pages...)` line — target keeps the PDF to 2–3 pages.
+
+LaTeX gotcha: bare `~` renders as a non-breaking space. Use `\textasciitilde` for a literal tilde (e.g. `\textasciitilde\$20K`).
 
 ## Structure
 
